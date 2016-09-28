@@ -1,5 +1,5 @@
 body {
-    background-color: #bfbfbf;
+    background-color: #C1BDB0;
 }
 
 header, footer{
@@ -23,6 +23,16 @@ footer {
 
     #trilogo {
         width: 55%;
+    }
+     
+}
+
+@media only screen and (min-width: 1024px) {
+
+    #textbox {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
     }
      
 }
