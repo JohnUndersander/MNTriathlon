@@ -1,13 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
         <title>MN Triathlon</title>
         <meta name="description" content="SWIM.BIKE.RUN.MINNESOTA">
         <meta name="author" content="John Undersander">
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
 
+        <ul id="navbar" class="w3-navbar w3-large w3-left-align">
+            <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+                <a href="javascript:void(0);" onclick="toggleMenu()">☰</a>
+            </li>
+            <li><a href="#">Home</a></li>
+            <li class="w3-hide-small"><a href="#">About</a></li>
+            <li class="w3-hide-small"><a href="#">Train</a></li>
+            <li class="w3-hide-small"><a href="#">Race</a></li>
+            <li class="w3-hide-small"><a href="#">Exec Board</a></li>
+            <li class="w3-hide-small"><a href="#">Contact</a></li>
+        </ul>
+
+        <div id="mobile-navbar" class="w3-hide w3-hide-large w3-hide-medium">
+            <ul class="w3-navbar w3-left-align w3-large">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Train</a></li>
+                <li><a href="#">Exec Board</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        
+        <header class="w3-container w3-margin-bottom">
+            <img id="trilogo" src="swimbikerun.gif">
+        </header>
+    
+        <div class="w3-container w3-border w3-large">
+            <div class="w3-left-align">
+                <p>Welcome to the homepage of the Minnesota Triathlon Team! We are a University of Minnesota student group that aims to provide a fun and healthy environment to train for triathlons and other multisport events! We offer numerous practices each week for members, including swimming, biking, running, and strength training. We welcome all ability and experience levels. Please contact us at minntri@umn.edu with any comments or questions.</p>
+            </div>
+        </div>
+        
+        <footer class="w3-container w3-bottom">
+            
+        </footer>
+
+        <script>
+        function toggleMenu() {
+            var menu = document.getElementById("mobile-navbar");
+            if (menu.className.indexOf("w3-show") == -1) { // if the menu is currently hidden, set css to show it.
+                menu.className += " w3-show";
+            } else {  // else, css it set to show so remove it to hide it again.
+                menu.className = menu.className.replace(" w3-show", "");
+            }
+        }
+        </script>
+        
     </body>
 </html>
