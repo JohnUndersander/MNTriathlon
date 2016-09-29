@@ -28,7 +28,7 @@ u {
     #trilogo {
         width: 55%;
     }
-     
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -38,5 +38,5 @@ u {
         display: block;
         margin: 0 auto;
     }
-     
+
 }
