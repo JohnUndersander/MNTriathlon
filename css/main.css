@@ -1,0 +1,42 @@
+body {
+    background-color: #C1BDB0;
+}
+
+header, footer{
+    background-color: #7a0019;
+}
+
+#textbox {
+    color: #7a0019;
+}
+
+u {
+    font-size: 30px;
+}
+
+#navbar, #mobile-navbar{
+    background-color: #FFCC33;
+}
+
+#trilogo {
+    display: block;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+
+    #trilogo {
+        width: 55%;
+    }
+     
+}
+
+@media only screen and (min-width: 1024px) {
+
+    #textbox {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+     
+}
