@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
-        <title>MN Triathlon</title>
+        <title>Train</title>
         <meta name="description" content="SWIM.BIKE.RUN.MINNESOTA">
         <meta name="author" content="John Undersander">
         <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
@@ -15,15 +15,15 @@
             <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
                 <a href="javascript:void(0);" onclick="toggleMenu()">☰</a>
             </li>
-            <li><a href="#">Home</a></li>
+            <li class="w3-hide-small"><a href="index.html">Home</a></li>
             <li class="w3-hide-small"><a href="about.html">About</a></li>
-            <li class="w3-hide-small"><a href="train.html">Train</a></li>
+            <li><a href="#">Train</a></li>
         </ul>
 
         <div id="mobile-navbar" class="w3-hide w3-hide-large w3-hide-medium">
             <ul class="w3-navbar w3-left-align w3-large">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="train.html">Train</a></li>
             </ul>
         </div>
         
@@ -32,22 +32,31 @@
         </header>
         
         <div>
-            <img src="swim.jpg" width="100%">
+            <img src="run.jpg" width="100%">
         </div>
     
         <div id="textbox" class="w3-container w3-large">
             <div class="w3-left-align">
-                <p>Welcome to the homepage of the Minnesota Triathlon Team! We are a University of Minnesota student group that aims to provide 
-                    a fun and healthy environment to train for triathlons and other multisport events! We offer numerous practices each week for 
-                    members, including swimming, biking, running, and strength training. We welcome all ability and experience levels.<br><br>
-                    Please contact us at <a href="mailto:minntri@umn.edu">minntri@umn.edu</a> with any comments or questions.</p>
+                <p><u>Practice Schedule</u><br><br>Practices may be adjusted to the group in attendance. All ability levels are encouraged to participate!</p>
+                <img src="schedule.png" width="100%">
+                <p><u>Training/Membership Requirements</u><br><br>Training with the MN Tri Team can be as intense or laid back as you want to make it. 
+                    We offer a number of coached practices at different times throughout the week so that members can choose convenient practices that fit 
+                    their schedules. Check out the requirements for our non-racing members and racing members below!</p><br><br>
+                <strong>Non-Racing Members</strong><br>
+                <ul><li>Come to any amount of practices that fits your schedule!</li></ul>
+                <strong>Racing Members</strong>
+                <ul>
+                    <li>Attend at least 3 practices per week</li>
+                    <li>Receive extra coaching attention, and represent our team at MWCTC races and Collegiate Nationals</li>
+                </ul><br>
+                <p>NOTE: Prospective members can attend up to 3 practices without paying a team fee, so don't hesitate to drop in on one of our practices!</p>
             </div>
         </div>
-
+        
         <script>
         function toggleMenu() {
             var menu = document.getElementById("mobile-navbar");
-            if (menu.className.indexOf("w3-show") == -1) {
+            if (menu.className.indexOf("w3-show") == -1) { 
                 menu.className += " w3-show";
             } else {  
                 menu.className = menu.className.replace(" w3-show", "");

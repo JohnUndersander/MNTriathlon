@@ -6,12 +6,12 @@ header, footer{
     background-color: #7a0019;
 }
 
-footer {
-    height: 50px;    
+#textbox {
+    color: #7a0019;
 }
 
-p {
-    color: #7a0019;
+u {
+    font-size: 30px;
 }
 
 #navbar, #mobile-navbar{
