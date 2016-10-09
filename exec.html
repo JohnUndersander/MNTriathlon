@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>Exec Board</title>
+        <meta name="description" content="SWIM.BIKE.RUN.MINNESOTA">
+        <meta name="author" content="John Undersander">
+        <link rel="stylesheet" href="css/w3.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="icon" href="img/uofm.png">
+    </head>
+    <body>
+        
+        <div id="wrapper">
+            
+            <div id="inner">
+        
+                <ul id="navbar" class="w3-navbar w3-large w3-left-align">
+                    <img id="navicon" src="img/uofm.png" width="40">
+                    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+                        <a href="javascript:void(0);" onclick="toggleMenu()">☰</a>
+                    </li>
+                    <li class="w3-hide-small"><a href="index.html">Home</a></li>
+                    <li class="w3-hide-small"><a href="about.html">About</a></li>
+                    <li class="w3-hide-small"><a href="train.html">Train</a></li>
+                    <li><a href="#">Exec Board</a></li>
+                </ul>
+
+                <div id="mobile-navbar" class="w3-hide w3-hide-large w3-hide-medium">
+                    <ul class="w3-navbar w3-left-align w3-large">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="train.html">Train</a></li>
+                    </ul>
+                </div>
+
+                <header class="w3-container">
+                    <img id="trilogo" src="img/swimbikerun.gif">
+                </header>
+
+                <div id="textbox" class="w3-container w3-large">
+                    
+                    <div class="w3-row-padding">
+                        <h4>President -  Will Haltom</h4>
+                        <img src="img/will.jpg" class="w3-round">
+                        <p> Will is a senior from St. Cloud, Minnesota. He is a double major in Computer Science and 
+                            Mathematics, and this is second year on the exec board of MN Triathlon. He has been a lifelong swimmer and runner, 
+                            but is relatively new to the sport of triathlon, having joined as a Sophomore after spending a year on the rowing 
+                            team. He has greatly enjoyed his time on the team so far, particularly team trips and competing in Collegiate 
+                            Nationals in 2015 and 2016. He is looking forward to further developing MN Triathlon into a competitive, fun, and 
+                            successful multi-sport team. </p> 
+                    </div>
+                    
+                    <div class="w3-row-padding">
+                        <h4>Co-Vice President -  Melanie Rabino</h4>
+                        <img src="img/melanie.jpg" class="w3-round">
+                        <p> Melanie is a first year pharmacy school student from Woodbury, MN. She just graduated from the U of M with a degree 
+                            in Chemistry. This will be her 5th year on the team and 4th year on the exec board. Melanie has been a competitive 
+                            swimmer since age 7 and has been racing triathlons since high school. She loves the sport of triathlon and especially 
+                            this team since it has allowed her to train for the sport she enjoys so much in a supportive and fun environment. 
+                            She really cherishes the friendships she has made through this team. Melanie is excited for her first year on the 
+                            team as a graduate student and hopes to help the team grow, get faster, and have fun. </p> 
+                    </div>                    
+                    
+                    <div class="w3-row-padding">
+                        <h4>Treasurer - Miranda Olson</h4>
+                        <img src="img/miranda.jpg" class="w3-round">
+                        <p> Miranda is a senior from Detroit Lakes, Minnesota majoring in Art. She first started competing in triathlons with her 
+                            family as a fun and healthy way to get together in the summers. Having swam and ran competitively throughout middle 
+                            school and high school she found that she had a solid foundation for the sport and enjoyed the challenge it presented. 
+                            Miranda joined the MN Triathlon team mostly looking for a solid group of people to work out with but soon found herself 
+                            competing at Collegiate Nationals in Arizona. She has enjoyed pushing herself and becoming friends with a great group 
+                            of people along the way. She looks forward to the coming year with the team and improving her race! </p> 
+                    </div>                    
+                    
+                    <div class="w3-row-padding">
+                        <h4>Co-Vice President - Hannah Eldridge</h4>
+                        <img src="img/hannah.jpg" class="w3-round">
+                        <p> Hannah is a senior from Madison, WI majoring in Speech-Language-Hearing Sciences and minoring in Spanish and Psychology. 
+                            Having dabbled in swimming and triathlon throughout her youth, she looked forward to joining the triathlon team at the 
+                            University of Minnesota as soon as she started her freshman year.  Hannah enjoys having the team as a consistent group 
+                            to train with and keep her committed to working hard in preparation for races.  She has competed with the team at Collegiate 
+                            Nationals the past two years and looks forward to the races ahead.  Hannah is excited for her second year on the exec board 
+                            and hopes to see the team grow and improve in new ways this school year.  </p> 
+                    </div>                    
+                    
+                    <div class="w3-row-padding">
+                        <h4>Coach - Louis Hughes</h4>
+                        <img src="img/louis.jpg" class="w3-round">
+                        <p> Louis Hughes has been participating in duathlons, aquathons, and, of course, triathlons for nearly 12 years.  He competed in 
+                            Track and Cross Country in his Middle and High School years, and was taught to swim by his Track/CC/Swimming Coach Joe Wildman. 
+                            He excelled in Track and Field, and continued to run for the University of Minnesota-Duluth where he became a school record holder 
+                            in multiple mid-distance events.  Although he spent most days during his collegiate years running, he also raced in many Swimming 
+                            and Biking events.  He is currently a member of Team TriScottsdale, is a 2-time USAT All-American, and an ITU World Championship 
+                            Qualifier.  This is  his first year coaching the  Minnesota Triathlon Team, and he is very excited to see the athletes develop 
+                            new skills and have their most successful season yet.  </p> 
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <script>
+        function toggleMenu() {
+            var menu = document.getElementById("mobile-navbar");
+            if (menu.className.indexOf("w3-show") == -1) {
+                menu.className += " w3-show";
+            } else {  
+                menu.className = menu.className.replace(" w3-show", "");
+            }
+        }
+        </script>
+        
+    </body>
+</html>

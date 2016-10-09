@@ -8,42 +8,55 @@
         <meta name="author" content="John Undersander">
         <link rel="stylesheet" href="css/w3.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="icon" href="img/uofm.png">
     </head>
     <body>
         
-        <ul id="navbar" class="w3-navbar w3-large w3-left-align">
-            <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
-                <a href="javascript:void(0);" onclick="toggleMenu()">☰</a>
-            </li>
-            <li><a href="#">Home</a></li>
-            <li class="w3-hide-small"><a href="about.html">About</a></li>
-            <li class="w3-hide-small"><a href="train.html">Train</a></li>
-        </ul>
+        <div id="wrapper">
+            
+            <div id="inner">
         
-        <div id="mobile-navbar" class="w3-hide w3-hide-large w3-hide-medium">
-            <ul class="w3-navbar w3-left-align w3-large">
-                <li><a href="about.html">About</a></li>
-                <li><a href="train.html">Train</a></li>
-            </ul>
-        </div>
-        
-        <header class="w3-container">
-            <img id="trilogo" src="img/swimbikerun.gif">
-        </header>
-        
-        <div>
-            <img src="img/swim.jpg" width="100%">
-        </div>
-        
-        <div id="textbox" class="w3-container w3-large">
-            <div class="w3-left-align">
-                <p>Welcome to the homepage of the Minnesota Triathlon Team! We are a University of Minnesota student group that aims to provide 
-                    a fun and healthy environment to train for triathlons and other multisport events! We offer numerous practices each week for 
-                    members, including swimming, biking, running, and strength training. We welcome all ability and experience levels.<br><br>
-                    Please contact us at <a href="mailto:minntri@umn.edu">minntri@umn.edu</a> with any comments or questions.</p>
+                <ul id="navbar" class="w3-navbar w3-large w3-left-align">
+                    <img id="navicon" src="img/uofm.png" width="40">
+                    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+                        <a href="javascript:void(0);" onclick="toggleMenu()">☰</a>
+                    </li>
+                    <li><a href="#">Home</a></li>
+                    <li class="w3-hide-small"><a href="about.html">About</a></li>
+                    <li class="w3-hide-small"><a href="train.html">Train</a></li>
+                    <li class="w3-hide-small"><a href="exec.html">Exec Board</a></li>
+                </ul>
+
+                <div id="mobile-navbar" class="w3-hide w3-hide-large w3-hide-medium">
+                    <ul class="w3-navbar w3-left-align w3-large">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="train.html">Train</a></li>
+                        <li><a href="exec.html">Exec Board</a></li>
+                    </ul>
+                </div>
+
+                <header class="w3-container">
+                    <img id="trilogo" src="img/swimbikerun.gif">
+                </header>
+
+                <div>
+                    <img src="img/swim.jpg" width="100%">
+                </div>
+
+                <div id="textbox" class="w3-container w3-xlarge">
+                    <div class="w3-left-align">
+                        <p>Welcome to the homepage of the Minnesota Triathlon Team! We are a University of Minnesota student group that aims to provide 
+                            a fun and healthy environment to train for triathlons and other multisport events! We offer numerous practices each week for 
+                            members, including swimming, biking, running, and strength training. We welcome all ability and experience levels.<br><br>
+                            Please contact us at <a href="mailto:minntri@umn.edu">minntri@umn.edu</a> with any comments or questions.</p>
+                    </div>
+                    
+                </div>
+                
             </div>
+            
         </div>
-        
+
         <script>
         function toggleMenu() {
             var menu = document.getElementById("mobile-navbar");

@@ -1,13 +1,21 @@
-body {
+html, body {
+    height: 100vh;
     background-color: #C1BDB0;
 }
 
-header, footer{
+header{
     background-color: #7a0019;
 }
 
 #textbox {
-    color: #7a0019;
+    color: ;
+    background-color: rgba(255, 255, 255, .3);
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+#trilogo {
+    margin: 0 auto;
+    display: block;
 }
 
 u {
@@ -18,14 +26,18 @@ u {
     background-color: #FFCC33;
 }
 
-#trilogo {
-    display: block;
-    margin: 0 auto;
+#navicon {
+    float: right;
+    margin-right: 5px;
+}
+
+#wrapper {
+    background-color: #C1BDB0;
 }
 
 @media only screen and (max-width: 768px) {
 
-    #trilogo {
+    #trilogo, #minnesota, #triathlon {
         width: 55%;
     }
 
@@ -34,9 +46,17 @@ u {
 @media only screen and (min-width: 1024px) {
 
     #textbox {
+        background-color: rgba(220, 220, 220, .5);
         width: 50%;
         display: block;
         margin: 0 auto;
+    }
+    
+    #inner {
+        background-color: white;
+        width: 85%;
+        margin: auto;
+        overflow: auto;
     }
 
 }
