@@ -8,7 +8,6 @@ header{
 }
 
 #textbox {
-    color: ;
     background-color: rgba(255, 255, 255, .3);
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 }
@@ -16,6 +15,10 @@ header{
 #trilogo {
     margin: 0 auto;
     display: block;
+}
+
+#title {
+    text-align: center;
 }
 
 u {
@@ -37,7 +40,7 @@ u {
 
 @media only screen and (max-width: 768px) {
 
-    #trilogo, #minnesota, #triathlon {
+    #trilogo, #mn, #tri {
         width: 55%;
     }
 
@@ -47,7 +50,7 @@ u {
 
     #textbox {
         background-color: rgba(220, 220, 220, .5);
-        width: 50%;
+        width: 60vw;
         display: block;
         margin: 0 auto;
     }
