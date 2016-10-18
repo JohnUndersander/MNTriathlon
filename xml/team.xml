@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE team [
+<!ELEMENT team (name, email, members?)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT members (member+)>
+<!ELEMENT member (name, email, board_position?, racing?)>
+<!ELEMENT racing EMPTY>
+<!ELEMENT board_position (#PCDATA)>
+]>
+<team>
+	<name>Minnesota Triathlon</name>
+	<email>minntri@umn.edu</email>
+	<members>
+		<member>
+			<name>Will Haltom</name>
+			<email>haltom@umn.edu</email>
+			<board_position>President</board_position>
+			<racing/>
+		</member>
+	</members>
+</team>
