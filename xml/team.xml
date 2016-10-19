@@ -1,22 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <!DOCTYPE team [
 <!ELEMENT team (name, email, members?)>
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT email (#PCDATA)>
 <!ELEMENT members (member+)>
-<!ELEMENT member (name, email, board_position?, racing?)>
-<!ELEMENT racing EMPTY>
-<!ELEMENT board_position (#PCDATA)>
+<!ELEMENT member (name, email)>
+<!ATTLIST member racing (true|false) #REQUIRED>
+<!ATTLIST member board_position CDATA #IMPLIED>
 ]>
 <team>
 	<name>Minnesota Triathlon</name>
 	<email>minntri@umn.edu</email>
 	<members>
-		<member>
+		<member racing="true" board_position="President">
 			<name>Will Haltom</name>
-			<email>haltom@umn.edu</email>
-			<board_position>President</board_position>
-			<racing/>
+			<email>x500@umn.edu</email>
+		</member>		
+		<member racing="true" board_position="Co-Vice President">
+			<name>Melanie Rabino</name>
+			<email>x500@umn.edu</email>
+		</member>		
+		<member racing="true" board_position="Treasurer">
+			<name>Miranda Olson</name>
+			<email>x500@umn.edu</email>
+		</member>		
+		<member racing="true" board_position="Co-Vice President">
+			<name>Hannah Eldridge</name>
+			<email>x500@umn.edu</email>
+		</member>		
+		<member racing="true" board_position="Coach">
+			<name>Louis Hughes</name>
+			<email>x500@umn.edu</email>
+		</member>		
+		<member racing="false">
+			<name>John Doe</name>
+			<email>x500@umn.edu</email>
+		</member>		
+		<member racing="true">
+			<name>Jane Doe</name>
+			<email>x500@umn.edu</email>
 		</member>
 	</members>
 </team>
