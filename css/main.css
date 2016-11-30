@@ -38,10 +38,22 @@ u {
     background-color: #C1BDB0;
 }
 
+#nationals {
+    width: 640px;
+    height: 360px;
+    margin: 0 auto;
+}
+
 @media only screen and (max-width: 768px) {
 
     #trilogo, #mn, #tri {
         width: 55%;
+    }
+    
+    #nationals {
+        width: 100%;
+        height: 56.25vw;
+        margin: 0 auto;
     }
 
 }
